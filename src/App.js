@@ -1,17 +1,19 @@
+import React from 'react';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Card from './components/Card';
 
 function App() {
     var source= "asdadsda.jpg"
     return (
-        <div className="card" style={{width: "18rem"}}>
-            <img className="card-img-top" src="..." alt="Card image cap" />
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-        </div> 
+        <div className="row">
+            <Card titulo="Meu primeiro card" texto="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum" imagem="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg" />
+            <Card titulo="Segundo card" texto="Meu segundo card não tem Lorem Ipsum!" imagem="https://conteudo.imguol.com.br/c/esporte/3c/2018/03/28/vampeta-em-entrevista-ao-esporteponto-final-1522270771955_v2_450x337.jpg" />
+            {/* <Card />
+            <Card />
+            <Card /> */}
+        </div>
     );
 }
 
